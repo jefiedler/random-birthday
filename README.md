@@ -59,6 +59,3 @@ randomBirthday({ min: 1980, max: 2000 })
 Pull requests and stars are highly welcome.
 
 For bugs and feature requests, please [create an issue](https://github.com/mock-end/random-birthday/issues/new).
-
-  
-
