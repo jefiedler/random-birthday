@@ -12,11 +12,8 @@
     "prepublish": "npm test"
   },
   "keywords": [
+    "birthday",
     "age",
-    "child",
-    "teen",
-    "adult",
-    "senior",
     "person",
     "random",
     "randomly",
