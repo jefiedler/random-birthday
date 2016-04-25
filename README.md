@@ -21,30 +21,33 @@ $ npm install --save random-birthday
 var randomBirthday = require('random-birthday');
 
 // API
-// - randomBirthday();
-// - randomBirthday(type);
-// - randomBirthday({min:[min], max:[amx]});
+// - randomBirthday([options]);
+
+// options
+// - type
+// - min
+// - max
 ```
 
 By default, returns an actual JavaScript [Date](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date) object.
 
 ```js
 randomBirthday();
-// => Fri Aug 16 1988 00:00:00 GMT-0400 (EDT)
+// => Wed Apr 25 1984 00:00:00 GMT+0800 (CST)
 ```
 
 Optionally specify the type, allowed types are: `child`, `teen`, `adult`, `senior`.
 
 ```js
-randomBirthday('child');
-// => Fri Aug 16 2010 00:00:00 GMT-0400 (EDT)
+randomBirthday({ type: 'child' });
+// => Tue Apr 25 2000 00:00:00 GMT+0800 (CST)
 ```
 
 Optionally specify the `min` and `max` for the year:
 
 ```js
 randomBirthday({ min: 1980, max: 2000 })
-// => Fri Aug 16 1999 00:00:00 GMT-0400 (EDT)
+// => Sun Apr 25 1999 00:00:00 GMT+0800 (CST)
 ```
 
 ## Related
